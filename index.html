@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TP Integrador Codo a Codo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <!--ENCABEZADO-->
+
+  <header class="container-fluid" id="encabezado">
+    <div class="row">
+      <div class="col-4 barraNavegacion">
+        <a class="navbar-brand text-white" href="#">
+          <img src="../imagenes para tpIntegradorFront/codoacodo.png" alt="Logo" width="100"
+            class="d-inline-block align-text-top">
+          Conf BsAs
+        </a>
+      </div>
+      <div class="col-8 barraNavegacion">
+        <nav class="navbar navbar-expand-md" id="posNav">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#">La conferencia</a>
+                <a class="nav-link" href="#oradores">Los oradores</a>
+                <a class="nav-link" href="#">El lugar y fecha</a>
+                <a class="nav-link" href="#conOrador">Convierte en orador</a>
+                <a class="nav-link" href="#ticket" id="colTick">Comprar tickets</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!--IMAGEN DE PORTADA-->
+    <div id="carouselExampleCaptions" class="carousel slide b-flex-column">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="image-container">
+            <img src="../imagenes para tpIntegradorFront/b1.jpg" d-block w-100 alt="Palacio de Aguas Corrientes">
+          </div>
+          <div class="carousel-caption d-none d-md-block" id="texImg">
+            <div class="txtImg">
+              <h5>Palacio de Aguas Corrientes</h5>
+              <p>El Palacio de Aguas Corrientes (llamado oficialmente Gran Depósito Ingeniero Guillermo Villanueva) es
+                un edificio emblemático de la ciudad de Buenos Aires, Argentina. Fue construido para alojar los tanques
+                de suministro de agua corriente de la creciente ciudad a fines del siglo XIX, envueltos en un exterior
+                suntuoso de materiales importados cuyo arquitecto fue el noruego Olaf Boye (1864-1933), que, llegado a
+                Buenos Aires en 1885, trabajó con renombrados arquitectos locales como Juan Antonio Buschiazzo, Adolfo
+                Büttner y Carlos Altgelt. La supervisión del proyecto estuvo a cargo del sueco Carlos Nyströmer. Se
+                encuentra en la Avenida Córdoba Nº 1950, en el barrio de Balvanera, y está clasificado como Monumento
+                Histórico Nacional.</p>
+            </div>
+            <button onclick="scrollToSection()" type="button" class="btn btn-outline-light" id="btnOrador">Quiero ser
+              Orador</button>
+            <button onclick="scrollToSection()" type="button" class="btn btn-success" id="btnticket">Comprar
+              tickets</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="../imagenes para tpIntegradorFront/ba2.jpg" d-block w-100" alt="Plaza de San Juan">
+          </div>
+          <div class="carousel-caption d-none d-md-block" id="texImg">
+            <div class="txtImg">
+              <h5>Plaza de San Juan (Teruel)</h5>
+              <p>Ubicación: La plaza se encuentra en el casco antiguo de Teruel, cerca de la Catedral de Santa María de
+                Teruel y de otros lugares de interés turístico.
+
+                Historia: La Plaza de San Juan tiene sus orígenes en la Edad Media y ha sido testigo de diversos eventos
+                a lo largo de los años. En el pasado, fue un importante centro comercial y social de la ciudad.
+
+                Arquitectura: La plaza está rodeada de edificios históricos y cuenta con una arquitectura típica de la
+                región de Aragón. Destaca la presencia de la Iglesia de San Juan, un templo de estilo gótico mudéjar
+                construido en el siglo XIV, que le da nombre a la plaza.
+
+                Espacio público: La plaza es un espacio público abierto, con una amplia zona peatonal que invita a
+                pasear y disfrutar del entorno. En ella se encuentran bancos, árboles y fuentes que proporcionan lugares
+                de descanso y esparcimiento.
+
+                Ambiente cultural: La Plaza de San Juan es escenario de diversos eventos y actividades culturales a lo
+                largo del año, como conciertos, festivales y ferias.
+
+                La Plaza de San Juan es un lugar de gran encanto y un punto de referencia en la ciudad de Teruel. Si
+                tienes la oportunidad de visitarla, podrás apreciar su belleza arquitectónica, disfrutar de su ambiente
+                histórico y sumergirte en la rica cultura de la región.</p>
+            </div>
+            <button onclick="scrollToSection()" type="button" class="btn btn-outline-light" id="btnOrador">Quiero ser
+              Orador</button>
+            <button onclick="scrollToSection()" type="button" class="btn btn-success" id="btnticket">Comprar
+              tickets</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-container">
+            <img src="../imagenes para tpIntegradorFront/ba3.jpg" d-block w-100" alt="Obelisco de Buenos Aires">
+          </div>
+          <div class="carousel-caption d-none d-md-block" id="texImg">
+            <div class="txtImg">
+              <h5>Obelisco de Buenos Aires</h5>
+              <p>El Obelisco de Buenos Aires es un monumento histórico, considerado un ícono de la Ciudad de Buenos
+                Aires, la capital de Argentina.
+
+                Tiene una longitud de 67,5 metros, y de estos 63 metros son desde la base de 7 x 7 m hasta el inicio del
+                ápice 3,50 x 3,50mts. Culminando con una punta del estilo Roma de unos 40 cm. Tiene una sola puerta de
+                entrada y en su cúspide hay cuatro ventanas.
+
+                Fue construido en 1936 con motivo del cuarto centenario de la llamada primera fundación de Buenos Aires
+                por Pedro de Mendoza.
+
+                Se encuentra ubicado en la Plaza de la República, en la intersección de las avenidas Corrientes y 9 de
+                Julio, en el barrio de San Nicolás en Buenos Aires.
+
+                La obra es autoría del arquitecto argentino Alberto Prebisch y la construcción estuvo a cargo del
+                consorcio alemán GEOPÉ-Siemens Bauunion-Grün & Bilfinger.</p>
+            </div>
+            <button onclick="scrollToSection()" type="button" class="btn btn-outline-light" id="btnOrador">Quiero ser
+              Orador</button>
+            <button onclick="scrollToSection()" type="button" class="btn btn-success" id="btnticket">Comprar
+              tickets</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <!--ORADORES-->
+    <section id="oradores">
+      <div class="row">
+        <div class="conOradores">
+          <h6 class="text-center">CONOCE A LOS</h6>
+        <h1 class="text-center">ORADORES</h1>
+        </div>
+        
+      </div>
+
+      <div class="d-flex flex-column align-items-center flex-md-row justify-content-center mb-3 ">
+        <div class="row">
+          <div class="d-flex justify-content-center">
+
+            <div class="card mx-1 mb-3 w-25">
+              <img src="../imagenes para tpIntegradorFront/steve.jpg" alt="Steve jobs" width="100%">
+              <div class="card-body">
+                <div class="d-flex" class="separador">
+                  <a href="https://es.wikipedia.org/wiki/JavaScript"
+                    class="btn btn-sm btn-warning mx-1 mb-3">JavaScript</a>
+                  <a href="https://es.react.dev" class="btn btn-sm btn-info text-white mx-1 mb-3">React</a>
+                </div>
+                <h5 class="card-title mb-3">Steve Jobs</h5>
+                <p class="card-text texto">fue un empresario, diseñador industrial, magnate empresarial, propietario de medios e inversor estadounidense. Fue cofundador y presidente ejecutivo de Apple​ y máximo accionista individual de The Walt Disney Company.</p>
+              </div>
+            </div>
+
+            <div class="card mx-1 mb-3 w-25">
+              <img src="../imagenes para tpIntegradorFront/bill.jpg" alt="Bill Gates" width="100%">
+              <div class="card-body">
+                <div class="d-flex" class="separador">
+                  <a href="https://es.wikipedia.org/wiki/JavaScript"
+                    class="btn btn-sm btn-warning mx-1 mb-3">JavaScript</a>
+                  <a href="https://es.react.dev" class="btn btn-sm btn-info text-white mx-1 mb-3">React</a>
+                </div>
+                <h5 class="card-title mb-3">Bill Gates</h5>
+                <p class="card-text texto">es un magnate empresarial, desarrollador de software, inversor, autor y filántropo estadounidense. Es cofundador de Microsoft, junto con su difunto amigo de la infancia Paul Allen. Durante su carrera en Microsoft, Gates ocupó los cargos de presidente, director ejecutivo (CEO), presidente y arquitecto jefe de software, además de ser el mayor accionista individual hasta mayo de 2014. Fue uno de los principales empresarios de la revolución de las microcomputadoras de las décadas de 1970 y 1980.</p>
+              </div>
+            </div>
+
+            <div class="card mx-1 mb-3 w-25">
+              <img src="../imagenes para tpIntegradorFront/ada.jpeg" alt="Ada Lovelace" width="100%">
+              <div class="card-body">
+                <div class="d-flex">
+                  <a href="https://emprendedor.com/ada-lovelace-vida-de-emprendedora-pionera-en-informatica/"
+                    class="btn btn-sm btn-secondary mx-1 mb-3">Negocios</a>
+                  <a href="https://hipertextual.com/2013/10/ada-lovelace-primera-programadora"
+                    class="btn btn-sm btn-danger text-white mx-1 mb-3">Sturtups</a>
+                </div>
+                <h5 class="card-title mb-3">Ada Lovelace</h5>
+                <p class="card-text texto">registrada al nacer como Augusta Ada Byron y conocida habitualmente como Ada Lovelace, fue una matemática y escritora británica, célebre sobre todo por su trabajo acerca de la computadora mecánica de uso general de Charles Babbage, la denominada máquina analítica. Fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro y en haber publicado lo que se reconoce hoy como el primer algoritmo destinado a ser procesado por una máquina, por lo que se la considera como la primera programadora de ordenadores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!--IMAGENES-->
+    <section>
+      <div class="image-container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="../imagenes para tpIntegradorFront/honolulu.jpg" class="onolulu" alt="onolulu">
+          </div>
+          <div class="col-md-6" id="bsas">
+            <h2>Honolulu -
+              Hawaii, United States</h2>
+            <p>Honolulu, en la costa sur de la isla de Oahu, es la capital de Hawái y la vía de acceso a la cadena de islas de EE.UU. El barrio de Waikiki es un centro de restaurantes, vida nocturna y comercio, famoso por su icónica playa con forma de medialuna bordeada de palmeras y hoteles de muchos pisos y con el cráter volcánico Diamond Head en lo alto a la distancia. Los sitios relacionados con el ataque a Pearl Harbor en la Segunda Guerra Mundial incluyen el USS Arizona Memorial.</p>
+            <a href="https://es.wikipedia.org/wiki/Honolulu"
+              class="btn btn-secondary btn-sm text-white mx-1 mb-3">Conoce más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--QUIERO SER ORADOR-->
+    <section id="conOrador">
+      <div class="row">
+        <div class="conOradores">
+          <h6 class="text-center">CONVIÉRTETE EN UN</h6>
+        <h1 class="text-center">ORADOR</h1>
+        </div>        
+      </div>
+      <div class="container b-flex-column">
+        <form>
+          <div class="form-group">
+            <label for="nombre"></label>
+            <input type="text" class="form-control" id="nombre" required placeholder="Nombre">
+          </div>
+          <div class="form-group">
+            <label for="apellido"></label>
+            <input type="text" class="form-control" id="apellido" required placeholder="Apellido">
+          </div>
+          <div class="form-group">
+            <label for="mensaje"></label>
+            <textarea class="form-control" id="mensaje" rows="3" required
+              placeholder="¿Sobre que quiere hablar?"></textarea>
+          </div>
+          <div>
+            <div class="col d-grid gap-2 col-6 mx-auto">
+              <input type="submit" value="Enviar" class="btn btn-success btnEnviar">
+            </div>
+        </form>
+      </div>
+    </section>
+
+    </section>
+
+    <!--TICKETS-->
+    <section id="ticket">
+      <div class="container b-flex-column" id="comprar">
+        <div class="fs-4 my-4 text-center"><h1>Comprar Tickets</h1></div>
+        <form action="#" method="post">
+          <div class="row">
+            <div class="col-md mb-3">
+              <input type="text" name="nombre" id="nombre" class="form-control" required placeholder="Nombre">
+            </div>
+            <div class="col-md mb-3">
+              <input type="text" name="apellido" id="apellido" class="form-control" required placeholder="Apellido">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md mb-3">
+              <input type="email" name="email" id="email" class="form-control" required placeholder="email">
+            </div>
+            <div class="col-md mb-3">
+              <input type="text" name="tel" id="tel" class="form-control" required placeholder="teléfono movil">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md mb-3">
+              <input type="number" name="cantEntradas" id="cantEntradas" onkeyup="calPrecioFinal()" class="form-control"
+                required placeholder="cantidad entradas">
+              <small>Costo de entrada $1000</small>
+            </div>
+            <div class="col-md mb-3">
+              <select class="form-select" id="porcDescuento" onchange="calPrecioFinal()">
+                <option value="10">Particular</option>
+                <option value="30">Estudiante</option>
+                <option value="50">Orador</option>
+              </select>
+            </div>
+            <div class="col-md mb-3">
+              <input type="text" name="valorTotal" id="valorTotal" disabled class="form-control"
+                placeholder="Valor total con descuentso">
+            </div>
+          </div>
+          <div class="row mb-4 my-2">
+            <div class="col">
+              <input type="submit" value="Comprar" class="btn btn-primary">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!--PIE DE PAGINA-->
+
+  <footer >
+    <div class="container-fluid" id="pie">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <nav class="navbar navbar-expand-md">
+            <div class="collapse navbar-collapse justify-content-center" id="list">
+              <div class="navbar-nav pie">
+                <a class="nav-link" href="#">Preguntas frecuentes</a>
+                <a class="nav-link" href="#">Contáctanos</a>
+                <a class="nav-link" href="#">Prensa</a>
+                <a class="nav-link" href="#">Conferencias</a>
+                <a class="nav-link" href="#">Términos y condiciones</a>
+                <a class="nav-link" href="#">Privacidad</a>
+                <a class="nav-link" href="#">Estudiantes</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+  <script src="javascript.js"></script>
+</body>
+
+</html>

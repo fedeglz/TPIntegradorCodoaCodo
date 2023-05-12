@@ -1,0 +1,183 @@
+@media (max-width: 768px) {
+  /* Estilos para pantallas pequeñas */
+  header {
+    font-size: 18px;
+  }
+  
+  nav {
+    font-size: 14px;
+  }
+  
+  main {
+    padding: 10px;
+  }
+  
+  section {
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos para pantallas medianas */
+  header {
+    font-size: 24px;
+  }
+  
+  nav {
+    font-size: 16px;
+  }
+  
+  main {
+    padding: 30px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Estilos para pantallas grandes */
+  header {
+    font-size: 32px;
+  }
+  
+  nav {
+    font-size: 18px;
+  }
+  
+  main {
+    padding: 0px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  footer {
+    font-size: 20px;
+  }
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+
+
+#encabezado{
+  background-color: rgba(80, 80, 80, 0.856);
+  height: 100px; /* Altura deseada */
+  width: 100%; /* Ancho completo */
+
+  
+}
+
+.barraNavegacion  {
+  
+  float: right;
+  margin-top: 0.5cm;
+}
+
+.nav-link{
+  color: white
+}
+
+#posNav{
+  
+  float: right;  
+}
+
+
+
+#colTick {
+  color:green;
+}
+
+.imagen{
+  opacity: 1.5;
+ 
+}
+
+.carousel-caption {
+  text-align: right; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  width: 70%; 
+  right: 50cm; 
+  
+  
+}
+
+.txtImg{
+  text-align: right; 
+  margin-left: auto;   
+  width: 50%; 
+    
+}
+
+
+.card mx-1{
+  margin-right: 20px
+}
+
+
+.conOradores{
+  margin: 0.9cm;
+  text-align: center;
+}
+
+.col-md-4{
+  margin-left: 1.5%;
+}
+
+.card-body {
+  margin-left: 0.5cm;
+  margin-top: 0.5cm;;
+}
+
+.onolulu{
+  
+  width: 100%;
+  padding: 0em;
+}
+
+#bsas{
+  
+  color:white;
+  background-color: rgb(65, 65, 65);
+}
+
+.form-group {
+  margin: auto;
+  max-width: 50em;
+} 
+
+.btnEnviar{
+  margin-top: 10px;
+}
+
+#pie {
+  background: linear-gradient(to right, #00193f, #00378a);  
+  height: 100px; /* Altura deseada */
+  width: 100%; /* Ancho completo */
+} 
+
+#list{
+  float: right;
+  margin-top: 0.5cm;
+}
+
+
+
